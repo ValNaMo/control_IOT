@@ -1,0 +1,21 @@
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+    border-width: 2px;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.rounded-pill {
+    border-radius: 50rem !important;
+}
+
+#historial div:not(:last-child) {
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #dee2e6;
+}

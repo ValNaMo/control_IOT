@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Vehículo IoT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-center mb-5 display-4 fw-bold text-primary">CONTROL DE VEHÍCULO IoT</h1>
+        
+        <div class="row g-3 mb-4">
+            <div class="col-4">
+                <button class="btn btn-primary btn-lg w-100 rounded-pill py-3" data-action="VUE_ADE_IZQ">VUE_ADE_IZQ</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-success btn-lg w-100 rounded-pill py-3" data-action="AVANZAR">AVANZAR</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary btn-lg w-100 rounded-pill py-3" data-action="VUE_ADE_DER">VUE_ADE_DER</button>
+            </div>
+        </div>
+
+        <div class="row g-3 mb-4">
+            <div class="col-4"> <button class="btn btn-warning btn-lg w-100 rounded-pill py-3" data-action="GIRO_90_IZQ">GIR0 90° IZQ</button>
+            </div>
+            <div class="col-4"> <button class="btn btn-danger btn-lg w-100 rounded-pill py-3" data-action="DETENER">DETENER</button>
+            </div>
+            <div class="col-4"> <button class="btn btn-warning btn-lg w-100 rounded-pill py-3" data-action="GIRO_90_DER">GIR0 90° DER</button>
+            </div>
+        </div>
+
+        <div class="row g-3 mb-4">
+            <div class="col-6">
+                <button class="btn btn-dark btn-lg w-100 rounded-pill py-3" data-action="GIRO_360_IZQ">GIR0 360° IZQ</button>
+            </div>
+            <div class="col-6">
+                <button class="btn btn-dark btn-lg w-100 rounded-pill py-3" data-action="GIRO_360_DER">GER0 360° DER</button>
+            </div>
+        </div>
+
+        <div class="row g-3 mb-5">
+            <div class="col-4">
+                <button class="btn btn-primary btn-lg w-100 rounded-pill py-3" data-action="VUE_ATR_IZQ">VUE_ATR_IZQ</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-danger btn-lg w-100 rounded-pill py-3" data-action="RETROCEDER">RETROCEDER</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary btn-lg w-100 rounded-pill py-3" data-action="VUE_ATR_DER">VUE_ATR_DER</button>
+            </div>
+        </div>
+
+        <div class="row g-3 mb-4">
+            <div class="col-12">
+                <button id="btnGenerarRutina" class="btn btn-info btn-lg w-100 rounded-pill py-3 shadow">GENERAR RUTINA ALEATORIA (10 MOV)</button>
+            </div>
+        </div>
+
+        <div class="alert alert-success text-center h2 mb-4">
+            MOVIMIENTO: <span id="estadoMovimiento" class="fw-bold">INACTIVO</span>
+        </div>
+
+        <div class="card border-primary">
+            <div class="card-header bg-primary text-white h5">
+                Últimas órdenes enviadas:
+            </div>
+            <div class="card-body" id="historial">
+                <div class="text-muted fst-italic">Presione algún botón para comenzar...</div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-5 text-muted">
+            Desarrollado por Nava Mohedano Valeria
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
