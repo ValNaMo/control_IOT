@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API_URL_DEVICES = 'http://44.193.200.137:5000/api/devices'; // Para acciones
+    const API_URL_DEVICES = 'http://44.200.242.172:5000/api/devices'; // Para acciones
     const API_URL_SPEED = 'http://44.193.200.137:5000/api/speed';   // Para velocidad
 
     const historial = document.getElementById('historial');
